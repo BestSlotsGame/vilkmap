@@ -7,16 +7,6 @@ const title = document.getElementById( 'title' );
 const subtitle = document.getElementById( 'subtitle' );
 
 
-const datasource = {
-  elevation: {
-    apiKey: NASADEM_APIKEY
-  },
-  imagery: {
-    urlFormat: 'https://cyberjapandata.gsi.go.jp/xyz/hillshademap/{z}/{x}/{y}.png',
-    attribution: 'Tiles: <a href="https://www.gsi.go.jp/bousaichiri/hillshademap.html">gis.go.jp</a> (hillshade)'
-  }
-}
-Procedural.init( { container, datasource } );
 const env = {
   title: 'monochrome',
   parameters: {
