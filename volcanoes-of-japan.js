@@ -23,7 +23,7 @@ const datasource = {
     //attribution: 'Tiles: <a href="https://www.gsi.go.jp/bousaichiri/hillshademap.html">gis.go.jp</a> (hillshade)'
   }
 }
-Procedural.init( { container, datasource } );
+//Procedural.init( { container, datasource } );
 const env = {
   title: 'monochrome',
   parameters: {
