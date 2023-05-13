@@ -20,7 +20,7 @@ const datasource = {
   },
   imagery: {
     urlFormat: 'https://cyberjapandata.gsi.go.jp/xyz/hillshademap/{z}/{x}/{y}.png',
-    attribution: ''
+    attribution: 'Tiles: <a href="https://www.gsi.go.jp/bousaichiri/hillshademap.html">gis.go.jp</a> (hillshade)'
   }
 }
 Procedural.init( { container, datasource } );
@@ -114,11 +114,11 @@ fetch( 'volcanoes.geojson' )
     // Add GH link
     const li = document.createElement( 'li' );
     let p = document.createElement( 'p' );
-    p.innerHTML = '';
+    p.innerHTML = '[[ - Fork me on GitHub - ]]';
     li.appendChild( p );
     peakList.appendChild( li );
     li.addEventListener( 'click', () => {
-      //window.location = 'https://github.com/felixpalmer/volcanoes-of-japan/';
+      window.location = 'https://github.com/felixpalmer/volcanoes-of-japan/';
     } );
 
     // Add overlay showing all volcanoes
