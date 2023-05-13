@@ -118,7 +118,7 @@ fetch( 'volcanoes.geojson' )
     li.appendChild( p );
     peakList.appendChild( li );
     li.addEventListener( 'click', () => {
-      window.location = 'https://github.com/felixpalmer/volcanoes-of-japan/';
+      window.location = 'https://github.com/BestSlotsGame/vilkmap/';
     } );
 
     // Add overlay showing all volcanoes
